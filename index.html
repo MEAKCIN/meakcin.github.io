@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mehmet Emin Akçin, AI Engineer</title>
+  <meta name="description" content="AI engineer in İstanbul building retrieval systems, agents and LLM evaluation. Experience, projects and contact.">
+  <meta property="og:title" content="Mehmet Emin Akçin, AI Engineer">
+  <meta property="og:description" content="Retrieval systems, agents and LLM evaluation. Previously FPGAs, forecasting and Spring Boot.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://meakcin.github.io/">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+  <link rel="stylesheet" href="assets/site.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top">M. E. Akçin</a>
+      <nav class="site-nav" aria-label="Sections">
+        <ul>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap">
+        <h1><span>Mehmet Emin</span> <span>Akçin</span></h1>
+
+        <div class="hero-grid">
+          <div class="intro">
+            <p>AI engineer at NewMind in İstanbul. I build retrieval systems and agents, and the evaluation harnesses that show whether they work.</p>
+            <p class="intro-sub">I studied electrical engineering and business at Koç University and started out designing for FPGAs, before moving through forecasting, full-stack work and data engineering.</p>
+            <ul class="hero-links">
+              <li><a class="button" href="mailto:akcinnmehmetemin@gmail.com">Email me</a></li>
+              <li><a href="https://www.linkedin.com/in/mehmeteminakcin">LinkedIn</a></li>
+              <li><a href="https://github.com/MEAKCIN">GitHub</a></li>
+            </ul>
+          </div>
+
+          <div class="finder" id="finder" role="search">
+            <label for="q">Search my work</label>
+            <p class="finder-help" id="q-help">Type a tool, topic or company to see where it shows up in my experience and projects.</p>
+            <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="e.g. Neo4j, voice, VHDL" aria-describedby="q-help" aria-controls="results">
+            <ul class="chips" aria-label="Example searches">
+              <li><button type="button" data-q="retrieval">retrieval</button></li>
+              <li><button type="button" data-q="voice">voice</button></li>
+              <li><button type="button" data-q="FPGA">FPGA</button></li>
+              <li><button type="button" data-q="Neo4j">Neo4j</button></li>
+              <li><button type="button" data-q="Spring Boot">Spring Boot</button></li>
+              <li><button type="button" data-q="forecasting">forecasting</button></li>
+            </ul>
+            <p class="finder-status" id="status" aria-live="polite"></p>
+            <ol class="results" id="results" tabindex="-1" aria-label="Search results"></ol>
+            <p class="finder-foot">Ranked with BM25 and fuzzy matching, right in your browser.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-h">
+      <div class="wrap">
+        <h2 id="experience-h">Experience</h2>
+
+        <ol class="timeline">
+          <li class="role is-current" data-kind="Experience" data-title="AI Engineer at NewMind">
+            <p class="when">May 2026 – present</p>
+            <div class="what">
+              <h3>AI Engineer <span class="org">at NewMind</span></h3>
+              <ul>
+                <li>
+                  <p class="lede" data-doc>End-to-end owner of the Skill and Intellectual Property Platform:</p>
+                  <ul>
+                    <li data-doc>Built an automated skill-generation compiler: SkillSpec contract, planner, parallel generation, static lint and signed registry publish, orchestrated on Temporal.</li>
+                    <li data-doc>Designed a two-stage evaluation harness: a trigger eval for precision and recall, and a task eval gated against a without-skill baseline.</li>
+                    <li data-doc>Modelled the Nice and Vienna classifications as a Neo4j labeled property graph, and scored trademark similarity from text embeddings, phonetics and visual embeddings.</li>
+                    <li data-doc>Implemented hybrid retrieval (BM25 + dense, RRF fusion) over IP legislation, which Turkish lexical matching requires.</li>
+                    <li data-doc>Developed an LLM-driven LPG ontology pipeline that keeps the IP knowledge-graph schema maintainable.</li>
+                  </ul>
+                </li>
+                <li data-doc>Delivered a regulatory compliance agent over an MCP server, covering BDDK, MASAK/AML-CFT and KVKK, with legislation as retrieval context.</li>
+                <li data-doc>Built a legal document pipeline with Docling, LangExtract and Presidio Turkish PII recognizers for KVKK pre-flight checks.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="role" data-kind="Experience" data-title="AI &amp; Data Engineer Consultant at Sna Consulting">
+            <p class="when">Jul 2025 – May 2026</p>
+            <div class="what">
+              <h3>AI &amp; Data Engineer Consultant <span class="org">at Sna Consulting</span></h3>
+              <ul>
+                <li data-doc>Developed RAG systems on vector and graph databases to improve retrieval accuracy.</li>
+                <li data-doc>Engineered a search agent on Elasticsearch to improve content discoverability and metadata filtering.</li>
+                <li data-doc>Built a voicebot for customer service that automates interactions and raises operational efficiency.</li>
+                <li data-doc>Created text2SQL solutions that turn natural language into database queries, and ran big-data queries on Oracle Exadata and Microsoft SQL databases.</li>
+                <li data-doc>Designed, developed and maintained scalable data pipelines and ETL/ELT processes across client projects.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="role" data-kind="Experience" data-title="Software Developer at Yapı Kredi Technology">
+            <p class="when">Feb 2025 – Jun 2025</p>
+            <div class="what">
+              <h3>Software Developer <span class="org">at Yapı Kredi Technology</span></h3>
+              <ul>
+                <li data-doc>Worked on end-to-end web applications with Java Spring Boot backend services and a React.js front end.</li>
+                <li data-doc>Managed PostgreSQL database operations to keep data consistent and the application fast.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="role" data-kind="Experience" data-title="Data Scientist at Schneider Electric">
+            <p class="when">Aug 2023 – May 2024</p>
+            <div class="what">
+              <h3>Data Scientist <span class="org">at Schneider Electric</span></h3>
+              <ul>
+                <li data-doc>Developed forecasting algorithms that raised sales revenue by 20% on average for each department in Turkey.</li>
+                <li data-doc>Used Python for data manipulation and trend analysis aligned with strategic marketing plans.</li>
+                <li data-doc>Built BI models and visualizations in Tableau and Microsoft Power BI.</li>
+                <li data-doc>Integrated robotic process automation (RPA) to keep data flowing on schedule and remove manual errors.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="role is-compact" data-kind="Experience" data-title="Project Management Intern at Innova Technology">
+            <p class="when">Jul 2023 – Aug 2023</p>
+            <div class="what">
+              <h3>Project Management Intern <span class="org">at Innova Technology</span></h3>
+              <ul>
+                <li data-doc>Analyzed wireless communication device placements to improve operational efficiency.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="role is-compact" data-kind="Experience" data-title="Industrial Automation Intern at Schneider Electric">
+            <p class="when">Aug 2022 – May 2023</p>
+            <div class="what">
+              <h3>Industrial Automation Intern <span class="org">at Schneider Electric</span></h3>
+              <ul>
+                <li data-doc>Supported marketing operations with data visualization and cross-department reporting.</li>
+                <li data-doc>Analyzed business intelligence data for long-term marketing strategy and business plans.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="role is-compact" data-kind="Experience" data-title="Software Development Intern at Saat Technology">
+            <p class="when">Jul 2022 – Aug 2022</p>
+            <div class="what">
+              <h3>Software Development Intern <span class="org">at Saat Technology</span></h3>
+              <ul>
+                <li data-doc>Built a full-stack website for video control systems with Java Spring Boot, React.js and Node.js.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-h">
+      <div class="wrap">
+        <h2 id="projects-h">Projects</h2>
+        <p class="section-note">Public repositories on GitHub. Most of my recent work is for clients and lives in private repositories; the experience above covers it.</p>
+
+        <div class="group">
+          <h3 class="group-h">AI and search</h3>
+          <ul class="project-list">
+            <li class="project is-feature" id="voice-bot" data-doc data-kind="Project" data-title="Local realtime voice bot" data-tags="speech stt tts llm vad turkish english pytorch cuda local privacy assistant">
+              <h4><a href="https://github.com/MEAKCIN/Voice_Bot">Local realtime voice bot</a></h4>
+              <p class="lang">Python</p>
+              <p class="desc" data-snippet>A voice assistant that runs entirely on your own machine, in English and Turkish. It hears when you stop talking, transcribes, answers and speaks back with low latency, and no audio leaves the device.</p>
+              <ol class="chain" aria-label="Pipeline">
+                <li><b>Silero VAD</b><span>detects speech</span></li>
+                <li><b>Whisper large-v3</b><span>transcribes</span></li>
+                <li><b>Qwen2.5 on Ollama</b><span>answers</span></li>
+                <li><b>XTTS v2</b><span>speaks</span></li>
+              </ol>
+              <p class="repo"><a href="https://github.com/MEAKCIN/Voice_Bot">MEAKCIN/Voice_Bot</a></p>
+            </li>
+
+            <li class="project is-feature" id="lyrics-search" data-doc data-kind="Project" data-title="Lyrics search engine" data-tags="elasticsearch retrieval hybrid search semantic vector embeddings sentence-transformers fuzzy autocomplete">
+              <h4><a href="https://github.com/MEAKCIN/elastic-search-music">Lyrics search engine</a></h4>
+              <p class="lang">Python</p>
+              <p class="desc" data-snippet>Hybrid search over song lyrics, artists and titles on Elasticsearch. It combines dense vectors from sentence-transformers with full-text and fuzzy matching, and adds autocomplete, “did you mean” suggestions, incremental indexing and audio-feature labels such as energetic or acoustic.</p>
+              <ul class="tags" aria-label="Built with">
+                <li>Elasticsearch</li><li>sentence-transformers</li><li>dense vectors</li><li>Parquet</li>
+              </ul>
+              <p class="repo"><a href="https://github.com/MEAKCIN/elastic-search-music">MEAKCIN/elastic-search-music</a></p>
+            </li>
+
+            <li class="project" id="emotion" data-doc data-kind="Project" data-title="Emotion recognition" data-tags="computer vision face webcam opencv">
+              <h4><a href="https://github.com/MEAKCIN/EmotionRecognition">Emotion recognition</a></h4>
+              <p class="lang">Python</p>
+              <p class="desc" data-snippet>Recognizes emotions from faces, either live from a webcam or from a single photo.</p>
+              <p class="repo"><a href="https://github.com/MEAKCIN/EmotionRecognition">MEAKCIN/EmotionRecognition</a></p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <h3 class="group-h">Hardware: FPGA and VHDL</h3>
+          <ul class="project-list">
+            <li class="project" id="fpga-radar" data-doc data-kind="Project" data-title="Ultrasonic radar on FPGA" data-tags="fpga vhdl basys hardware servo uart ultrasonic sensor">
+              <h4><a href="https://github.com/MEAKCIN/FPGA_Radar-Project">Ultrasonic radar on FPGA</a></h4>
+              <p class="lang">VHDL</p>
+              <p class="desc" data-snippet>A radar on a Basys 3 board: a servo sweeps an ultrasonic sensor, distances stream out over UART, and a Python script draws the radar screen.</p>
+              <p class="repo"><a href="https://github.com/MEAKCIN/FPGA_Radar-Project">MEAKCIN/FPGA_Radar-Project</a></p>
+            </li>
+            <li class="project" id="fir-filter" data-doc data-kind="Project" data-title="FIR filter on FPGA" data-tags="fpga vhdl dsp signal processing filter hardware">
+              <h4><a href="https://github.com/MEAKCIN/FPGA_FIR_Filter">FIR filter on FPGA</a></h4>
+              <p class="lang">VHDL</p>
+              <p class="desc" data-snippet>A finite impulse response filter designed to run at 120 MHz on an FPGA.</p>
+              <p class="repo"><a href="https://github.com/MEAKCIN/FPGA_FIR_Filter">MEAKCIN/FPGA_FIR_Filter</a></p>
+            </li>
+            <li class="project" id="fsm" data-doc data-kind="Project" data-title="Finite state machine" data-tags="fpga vhdl basys testbench hardware">
+              <h4><a href="https://github.com/MEAKCIN/FPGA-Finite_State_Machine">Finite state machine</a></h4>
+              <p class="lang">VHDL</p>
+              <p class="desc" data-snippet>A state machine in VHDL for the Basys 3, with a testbench and a design report.</p>
+              <p class="repo"><a href="https://github.com/MEAKCIN/FPGA-Finite_State_Machine">MEAKCIN/FPGA-Finite_State_Machine</a></p>
+            </li>
+            <li class="project" id="coffee-maker" data-doc data-kind="Project" data-title="Coffee maker controller" data-tags="fpga vhdl tcl hardware simulation">
+              <h4><a href="https://github.com/MEAKCIN/FPGA_CoffeeMaker">Coffee maker controller</a></h4>
+              <p class="lang">VHDL, Tcl</p>
+              <p class="desc" data-snippet>My first FPGA design: a simulated coffee machine controller, with an engineering design report.</p>
+              <p class="repo"><a href="https://github.com/MEAKCIN/FPGA_CoffeeMaker">MEAKCIN/FPGA_CoffeeMaker</a></p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <h3 class="group-h">Software and apps</h3>
+          <ul class="project-list">
+            <li class="project" id="tictactoe" data-doc data-kind="Project" data-title="Infinity TicTacToe" data-tags="android mobile kotlin game">
+              <h4><a href="https://github.com/MEAKCIN/TicTacToe">Infinity TicTacToe</a></h4>
+              <p class="lang">Kotlin</p>
+              <p class="desc" data-snippet>A two-player Android game that keeps score of wins, losses and draws.</p>
+              <p class="repo"><a href="https://github.com/MEAKCIN/TicTacToe">MEAKCIN/TicTacToe</a></p>
+            </li>
+            <li class="project" id="tcp-ssl" data-doc data-kind="Project" data-title="TCP vs SSL" data-tags="java networking security tls sockets client server">
+              <h4><a href="https://github.com/MEAKCIN/TCP_vs_SSL">TCP vs SSL</a></h4>
+              <p class="lang">Java</p>
+              <p class="desc" data-snippet>A client and server that send the same text files over plain TCP and over SSL with a custom keystore and truststore.</p>
+              <p class="repo"><a href="https://github.com/MEAKCIN/TCP_vs_SSL">MEAKCIN/TCP_vs_SSL</a></p>
+            </li>
+            <li class="project" id="multithread-server" data-doc data-kind="Project" data-title="Multithreaded server" data-tags="java networking concurrency threads rest api json client server">
+              <h4><a href="https://github.com/MEAKCIN/MultiThreadServer">Multithreaded server</a></h4>
+              <p class="lang">Java</p>
+              <p class="desc" data-snippet>A multithreaded Java server with its own client, query protocol and REST API layer, built for the COMP416 course.</p>
+              <p class="repo"><a href="https://github.com/MEAKCIN/MultiThreadServer">MEAKCIN/MultiThreadServer</a></p>
+            </li>
+            <li class="project" id="cms" data-doc data-kind="Project" data-title="Content management system" data-tags="java spring boot maven rest backend video licensing">
+              <h4><a href="https://github.com/MEAKCIN/CMS-BackEnd">Content management system</a></h4>
+              <p class="lang">Java</p>
+              <p class="desc" data-snippet>A Spring Boot service that manages content and licenses for a video-sharing platform.</p>
+              <p class="repo"><a href="https://github.com/MEAKCIN/CMS-BackEnd">MEAKCIN/CMS-BackEnd</a> and <a href="https://github.com/MEAKCIN/CMS-FrontEnd">CMS-FrontEnd</a></p>
+            </li>
+            <li class="project" id="uno" data-doc data-kind="Project" data-title="Uno" data-tags="java game swing gui bot">
+              <h4><a href="https://github.com/MEAKCIN/UnoGame">Uno</a></h4>
+              <p class="lang">Java</p>
+              <p class="desc" data-snippet>A desktop Uno game with a bot opponent, user accounts and per-player statistics.</p>
+              <p class="repo"><a href="https://github.com/MEAKCIN/UnoGame">MEAKCIN/UnoGame</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-h">
+      <div class="wrap">
+        <h2 id="skills-h">Skills</h2>
+        <p class="section-note">Select a skill to see where I’ve used it.</p>
+        <dl class="skills" data-kind="Skills">
+          <dt>Languages</dt>
+          <dd data-doc data-title="Languages">
+            <ul>
+              <li><button type="button" data-q="Python">Python</button></li>
+              <li><button type="button" data-q="Go">Go</button></li>
+              <li><button type="button" data-q="TypeScript JavaScript">TypeScript / JavaScript</button></li>
+              <li><button type="button" data-q="Java">Java</button></li>
+              <li><button type="button" data-q="SQL">SQL</button></li>
+              <li><button type="button" data-q="Matlab">Matlab</button></li>
+              <li><button type="button" data-q="VHDL">VHDL</button></li>
+            </ul>
+          </dd>
+          <dt>AI and agents</dt>
+          <dd data-doc data-title="AI and agents">
+            <ul>
+              <li><button type="button" data-q="RAG">RAG</button></li>
+              <li><button type="button" data-q="hybrid retrieval BM25 dense RRF">Hybrid retrieval (BM25 + dense, RRF)</button></li>
+              <li><button type="button" data-q="MCP">MCP</button></li>
+              <li><button type="button" data-q="Temporal">Temporal</button></li>
+              <li><button type="button" data-q="Docling">Docling</button></li>
+              <li><button type="button" data-q="LangExtract">LangExtract</button></li>
+              <li><button type="button" data-q="Presidio">Presidio</button></li>
+              <li><button type="button" data-q="evaluation">LLM evaluation</button></li>
+            </ul>
+          </dd>
+          <dt>Data and storage</dt>
+          <dd data-doc data-title="Data and storage">
+            <ul>
+              <li><button type="button" data-q="Neo4j">Neo4j</button></li>
+              <li><button type="button" data-q="Qdrant">Qdrant</button></li>
+              <li><button type="button" data-q="Elasticsearch">Elasticsearch</button></li>
+              <li><button type="button" data-q="PostgreSQL">PostgreSQL</button></li>
+              <li><button type="button" data-q="Oracle Exadata">Oracle Exadata</button></li>
+              <li><button type="button" data-q="text2SQL">text2SQL</button></li>
+              <li><button type="button" data-q="ETL ELT pipelines">ETL / ELT</button></li>
+            </ul>
+          </dd>
+          <dt>Tools and frameworks</dt>
+          <dd data-doc data-title="Tools and frameworks">
+            <ul>
+              <li><button type="button" data-q="React">React</button></li>
+              <li><button type="button" data-q="Spring Boot">Spring Boot</button></li>
+              <li><button type="button" data-q="Docker">Docker</button></li>
+              <li><button type="button" data-q="Power BI">Power BI</button></li>
+              <li><button type="button" data-q="Tableau">Tableau</button></li>
+              <li><button type="button" data-q="Power Automate">Power Automate</button></li>
+              <li><button type="button" data-q="RPA">RPA</button></li>
+              <li><button type="button" data-q="Informatica">Informatica</button></li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-h">
+      <div class="wrap">
+        <h2 id="education-h">Education</h2>
+        <div class="edu" data-doc data-kind="Education" data-title="Koç University">
+          <h3>Koç University, İstanbul</h3>
+          <ul class="degrees">
+            <li><span class="degree">B.S. Electrical and Electronics Engineering</span> <span class="when">2020–2025</span></li>
+            <li><span class="degree">B.A. Business Administration</span> <span class="when">2022–2025</span></li>
+          </ul>
+          <p>On campus I was a newcomer mentor (2022–2025) and a resident assistant (2021–2022).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-h">
+      <div class="wrap">
+        <h2 id="contact-h">Get in touch</h2>
+        <p class="section-note">Email is the fastest way to reach me.</p>
+        <p class="contact-mail"><a href="mailto:akcinnmehmetemin@gmail.com">akcinnmehmetemin@gmail.com</a></p>
+        <ul class="contact-links">
+          <li><a href="https://www.linkedin.com/in/mehmeteminakcin">LinkedIn</a></li>
+          <li><a href="https://github.com/MEAKCIN">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Mehmet Emin Akçin</p>
+      <p><a href="https://github.com/MEAKCIN/meakcin.github.io">Source on GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/search.js" defer></script>
+</body>
+</html>
